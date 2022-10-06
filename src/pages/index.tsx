@@ -1,5 +1,12 @@
+import { Box } from "@chakra-ui/react"
+import { Banner } from "../componets/Banner";
+import { Header } from "../componets/Header";
+
 export default function Home() {
   return (
-    <h1>hello world!</h1>
+    <Box>
+      <Header />
+      <Banner />
+    </Box>
   )
 }

@@ -7,6 +7,7 @@ export const theme = extendTheme({
       highlight50: "#FFBA0888",
       texts: "#47585B",
       info: "#999999",
+      lightInfo: "#DADADA",
       bg: "#F5F8FA"
     }
   },
@@ -17,7 +18,7 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: "brand.bg",
-        color: "brand.texts"
+        color: "brand.texts",
       }
     }
   }
