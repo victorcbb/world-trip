@@ -17,6 +17,7 @@ export function Banner() {
         pt="20"
         mx="auto"
         justifyContent="space-between"
+        px="1"
       >
         <Stack spacing="5">
           <Text
