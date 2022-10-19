@@ -10,10 +10,12 @@ export default function Home() {
       <Header />
       <Banner />
       <Flex 
-        gap="40" 
-        justify="space-between" 
-        w="100%" maxW={1160} 
-        mx="auto" mt="20"
+        gap={["0", "40"]}
+        justify={["space-around", "space-between"]}
+        wrap={["wrap", "nowrap"]}
+        w="100%" maxW={["280px", "1160px"]}
+        h={["120px", "fit-content"]}
+        mx="auto" mt={["14", "20"]}
         px="1"
       >
         <TravelType image="cocktail.svg" type="vida noturna" />
@@ -24,15 +26,15 @@ export default function Home() {
       </Flex>
 
       <Box 
-        w="5.625rem" 
+        w={["3.75rem", "5.625rem"]} 
         h={0} 
         border="1px" 
         borderColor="brand.texts" 
         mx="auto" 
-        mt="20" 
+        mt={["9", "20"]} 
       />
 
-      <Heading as="h2" textAlign="center" fontWeight="medium" fontSize="4xl" m="3.25rem auto">
+      <Heading as="h2" textAlign="center" fontWeight="medium" fontSize={["xl", "4xl"]} m={["1.5rem auto 1.25rem", "3.25rem auto"]}>
         Vamos nessa?<br/> Então escolha seu continente
       </Heading>
 

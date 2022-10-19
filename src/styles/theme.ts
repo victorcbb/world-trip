@@ -51,6 +51,10 @@ export const theme = extendTheme({
         color: "brand.highlight",
         margin: "0 1.25rem",
       },
+
+      ".swiper-button-next:after, .swiper-button-prev:after": {
+        "font-size": "60px"
+      },
       
       ".swiper-slide img": {
         display: "block",
@@ -66,10 +70,30 @@ export const theme = extendTheme({
       ".swiper-pagination-bullet": {
         width: "1rem",
         height: "1rem",
+        bg: "brand.info"
       },
 
       ".swiper-pagination-bullet-active": {
         bg: "brand.highlight"
+      },
+
+      "@media (max-width: 450px)": {
+        ".swiper": {
+          height: "250px"
+        },
+        
+        ".swiper-button-next, .swiper-button-prev": {
+          top: "calc(50% - 1rem)"
+        },
+        
+        ".swiper-button-next:after, .swiper-button-prev:after": {
+          "font-size": "2rem"
+        },
+
+        ".swiper-pagination-bullet": {
+          width: "0.5rem",
+          height: "0.5rem",
+        },
       }
     }
   }

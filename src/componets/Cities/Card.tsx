@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card({ image, city, country, flag }: CardProps) {
   return (
-    <Box w="16rem" h="17.5rem">
+    <Box w="16rem" h="17.5rem" mx="auto">
           <Image src={image} alt={`Imagem da cidade de ${city}`} />
           <Flex 
             w="16rem" 

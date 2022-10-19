@@ -4,15 +4,15 @@ import { Flex, SimpleGrid, Stack, Text, Tooltip } from "@chakra-ui/react";
 export function Info() {
   return (
     <SimpleGrid
-      columns={2}
-      spacing="4.375rem"
+      columns={[1, 2]}
+      spacing={["1rem", "4.375rem"]}
       minChildWidth="350px"
       maxW={1260}
       mx="auto"
-      mt="20"
+      mt={["6", "20"]}
       px="4"
     >
-      <Text fontSize="2xl" lineHeight="1.5" textAlign="justify">
+      <Text fontSize={["sm", "2xl"]} lineHeight="1.5" textAlign="justify">
         A Europa é, por convenção, um dos seis continentes do mundo.
         Compreendendo a península ocidental da Eurásia,
         a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais,
@@ -27,7 +27,7 @@ export function Info() {
       >
         <Stack alignItems="center">
           <Text 
-            fontSize="5xl" 
+            fontSize={["2xl", "5xl"]} 
             color="brand.highlight" 
             fontWeight="semibold" 
             lineHeight="1"
@@ -37,7 +37,7 @@ export function Info() {
           <Text
             fontWeight="semibold"
             lineHeight="100%"
-            fontSize="1.5rem"
+            fontSize={["lg", "2xl"]}
             mt="0"
           >
             países
@@ -46,7 +46,7 @@ export function Info() {
 
         <Stack alignItems="center">
           <Text 
-            fontSize="5xl" 
+            fontSize={["2xl", "5xl"]} 
             color="brand.highlight" 
             fontWeight="semibold" 
             lineHeight="1"
@@ -56,7 +56,7 @@ export function Info() {
           <Text
             fontWeight="semibold"
             lineHeight="100%"
-            fontSize="1.5rem"
+            fontSize={["lg", "2xl"]}
             mt="0"
           >
             línguas
@@ -65,7 +65,7 @@ export function Info() {
 
         <Stack alignItems="center">
           <Text 
-            fontSize="5xl" 
+            fontSize={["2xl", "5xl"]} 
             color="brand.highlight" 
             fontWeight="semibold" 
             lineHeight="1"
@@ -75,7 +75,7 @@ export function Info() {
           <Text
             fontWeight="semibold"
             lineHeight="100%"
-            fontSize="1.5rem"
+            fontSize={["lg", "2xl"]}
             mt="0"
           >
             cidades +100 {" "}

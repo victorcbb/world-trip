@@ -6,12 +6,14 @@ export function Cities() {
     <Box
       maxW={1260}
       mx="auto"
-      mt="20"
+      mt={["6", "20"]}
       px="4"
     >
-      <Heading as="h2" fontWeight="500" fontSize="4xl">Cidades +100</Heading>
+      <Heading as="h2" fontWeight="500" fontSize={["2xl", "4xl"]}>
+        Cidades +100
+      </Heading>
 
-      <SimpleGrid columns={[1, 2, 3, 4]} mt="10" mb="16" spacing="2.875rem">
+      <SimpleGrid columns={[1, 2, 3, 4]} mt={["5", "10"]} mb="16" spacing={["1.25rem", "2.875rem"]}>
 
         <Card
           image="./europe/london.png"
